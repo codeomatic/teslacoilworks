@@ -1,52 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-              crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous">
-        </script>
-        <title>Tesla Coil Works</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <title>Tesla Coil Works</title>
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Tesla Coil Works <strong></strong></a></h1>
-        </header><!-- /#banner -->
+<body id="index" data-spy="scroll" data-target="#mainNav" data-offset="80">
 
-        <nav id="menu"><ul>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" id="mainNav">
+        <a class="navbar-brand" href="">Tesla Coil Works</a>
 
-            <li>
-                <a href="/pages/introduction.html">Introduction</a>
-            </li>
-            <li>
-                <a href="/pages/demonstrations.html">Demonstrations</a>
-            </li>
-            <li>
-                <a href="/pages/talks.html">Talks</a>
-            </li>
-            <li>
-                <a href="/pages/equipment.html">Equipment</a>
-            </li>
-            <li>
-                <a href="/pages/technical-requirements.html">Technical Requirements</a>
-            </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavToggler"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        </ul></nav><!-- /#menu -->
+        <div class="collapse navbar-collapse" id="mainNavToggler">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link"
+                   href="#introduction">Introduction</a>
+                <a class="nav-item nav-link"
+                   href="#demonstrations">Demonstrations</a>
+                <a class="nav-item nav-link"
+                   href="#talks">Talks</a>
+                <a class="nav-item nav-link"
+                   href="#equipment">Equipment</a>
+                <a class="nav-item nav-link"
+                   href="#technical-requirements">Technical Requirements</a>
+            </div>
+        </div>
 
-<section id="content" class="body">
-    <h2>Introduction</h2>
-    <p><p>A wee bit of introduction for me. I am a Physicist and Electrical Engineer, and originally worked at Tektronix 
+    </nav>
+
+<section id="content">
+    <div id="introduction" class="container-fluid">
+        <h4>Introduction</h4>
+        <p><p>A wee bit of introduction for me. I am a Physicist and Electrical Engineer, and originally worked at Tektronix 
 before moving into Electrical Engineering and specializing in Power Distribution Systems, power supply design for 
 electronics, and worked as a Power Quality engineer at PGE. I later moved into EMC (Electromagnetic Compatibility) 
 Engineering and Electrical Product Safety areas. I started making Tesla Coils in high school, and the coils gradually 
@@ -56,8 +49,10 @@ Tesla has a near god status, so I built a Tesla Coil small enough to be easily m
 life and inventions of Nikola Tesla, and started giving talks at Steampunk and Science Fiction Conventions on Tesla 
 with Tesla Coil demo sessions at the end.  All of my equipment is built with the Steampunk design aesthetic in mind 
 and is designed to be displayed, and has been entered in several Steampunk Art shows. </p></p>
-    <h2>Demonstrations</h2>
-    <p><p>In my demonstrations I want to vividly show the beauty in the spectacular arcs, sparks and corona glow created by
+    </div>
+    <div id="demonstrations" class="container-fluid">
+        <h4>Demonstrations</h4>
+        <p><p>In my demonstrations I want to vividly show the beauty in the spectacular arcs, sparks and corona glow created by
 Tesla Coils and other High Voltage apparatus. As part of the demos I add explanations of the science involved in
 the operation of the equipment and the discharges. I put the high voltage devices into their place in the History
 of Technology, and explain how advances in science allowed the development of devices that could generate ever higher 
@@ -88,8 +83,10 @@ Maker Fair for 5 years, and for three years there we ran my BIG Tesla Coil which
 The Portland Fire Marshal inspected and approved my setups there every year. In February of 2018 I gave eight 
 demos at the Portland Winter Light Festival. My setup was in the Oregon Rail Heritage Center, and we had between 
 300 and 500 people at every demo. I estimate that over 5000 people have seen my demos with no problems.</p></p>
-    <h2>Talks</h2>
-    <p><p>I have developed a number of different lectures that I give on Science, on Tesla Coils, and on High Voltage equipment 
+    </div>
+    <div id="talks" class="container-fluid">
+        <h4>Talks</h4>
+        <p><p>I have developed a number of different lectures that I give on Science, on Tesla Coils, and on High Voltage equipment 
 and effects. These are PowerPoint presentations and last from 30 to 50 minutes and can have Tesla Coil and high 
 voltage demonstrations incorporated into them.</p>
 <div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="n">Nikola</span> <span class="n">Tesla</span> <span class="k">and</span> <span class="n">his</span> <span class="n">Era</span> <span class="k">of</span> <span class="n">Inventions</span><span class="p">.</span>
@@ -105,8 +102,10 @@ voltage demonstrations incorporated into them.</p>
 <div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="n">Discovery</span> <span class="k">of</span> <span class="n">Cathode</span> <span class="n">Rays</span> <span class="err">–</span> <span class="n">How</span> <span class="n">electrons</span> <span class="n">were</span> <span class="n">discovered</span><span class="p">,</span> <span class="k">with</span> <span class="n">demos</span><span class="p">.</span> 
 <span class="mi">2</span><span class="p">.</span> <span class="n">Lightning</span><span class="p">:</span> <span class="n">Ball</span> <span class="n">Lightning</span><span class="p">,</span> <span class="n">Red</span> <span class="n">Sprites</span><span class="p">,</span> <span class="k">and</span> <span class="n">Giant</span> <span class="n">Blue</span> <span class="n">Spires</span>
 </pre></div></p>
-    <h2>Equipment</h2>
-    <p><p>Available for Demonstrations</p>
+    </div>
+    <div id="equipment" class="container-fluid">
+        <h4>Equipment</h4>
+        <p><p>Available for Demonstrations</p>
 <div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="mi">500</span> <span class="n">KV</span> <span class="n">spark</span> <span class="n">gap</span> <span class="n">Tesla</span> <span class="n">Coil</span><span class="p">,</span> <span class="mi">3</span> <span class="n">foot</span> <span class="n">arc</span>
 <span class="mi">2</span><span class="p">.</span> <span class="mi">300</span> <span class="n">KV</span> <span class="k">vacuum</span> <span class="n">tube</span> <span class="n">Tesla</span> <span class="n">Coil</span><span class="p">,</span> <span class="mi">2</span> <span class="n">foot</span> <span class="n">arc</span>
 <span class="mi">3</span><span class="p">.</span> <span class="n">Tiny</span> <span class="n">Tesla</span> <span class="n">Coil</span><span class="p">,</span> <span class="k">with</span> <span class="n">light</span> <span class="n">bulb</span> <span class="n">plasma</span> <span class="n">ball</span>
@@ -132,8 +131,10 @@ voltage demonstrations incorporated into them.</p>
 <span class="mi">3</span>. <span class="nv">Cross</span> <span class="nv">tubes</span> <span class="k">for</span> <span class="nv">gas</span> <span class="nv">discharge</span> <span class="nv">experiments</span>.
 <span class="mi">4</span>. <span class="nv">Crookes</span> <span class="nv">tubes</span> <span class="k">for</span> <span class="nv">electron</span> <span class="nv">beam</span> <span class="nv">demonstrations</span>.
 </pre></div></p>
-    <h2>Technical Requirements</h2>
-    <p><p>To demonstrate both of the medium Tesla Coils (3 foot arcs, 500 KV and 2 foot arcs, 300 KV)  I need a large 
+    </div>
+    <div id="technical-requirements" class="container-fluid">
+        <h4>Technical Requirements</h4>
+        <p><p>To demonstrate both of the medium Tesla Coils (3 foot arcs, 500 KV and 2 foot arcs, 300 KV)  I need a large 
 (roughly 20 feet wide by 14 feet deep, with a 12 foot minimum ceiling height) <strong>DARK</strong> area so the faint luminous phenomena 
 in the discharges can be seen. I usually bring 2 medium Tesla coils, a traditional spark gap type Tesla Coil with 3 
 foot arcs, and a vacuum tube Tesla Coil with 2 foot arcs. I also have 3 large Jacobs Ladders with 2, 4, and 6 foot tall 
@@ -158,13 +159,29 @@ this to the audience before the demo. This has not been a problem in any of my d
 of my equipment is disassembled for storage, and for transport, so it must be reassembled for operation. For a full 
 setup I bring about two SUV loads of equipment. Teardown is about half of the setup time. I like to have an assistant 
 to help in the setup and teardown, and to help with demos so they run faster</p></p>
+    </div>
 </section>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+    <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+            Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous">
+    </script>
 </body>
 </html>
