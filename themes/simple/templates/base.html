@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous">
+        </script>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        {% endblock head %}
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+        </header><!-- /#banner -->
+
+        <nav id="menu"><ul>
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in pages %}
+            <li{% if p == page %} class="active"{% endif %}>
+                <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+
+        {% if DISPLAY_CATEGORIES_ON_MENU %}
+          {% for cat, null in categories %}
+            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+          {% endfor %}
+        {% endif %}
+        </ul></nav><!-- /#menu -->
+
+        {% block content %}
+        {% endblock %}
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

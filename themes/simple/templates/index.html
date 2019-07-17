@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content" class="body">
+    {% for page in pages %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.content }}</p>
+    {% endfor %}
+</section>
+{% endblock content %}
