@@ -32,7 +32,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 DISPLAY_PAGES_ON_MENU = True
 
-PAGE_ORDER_BY = 'main_menu_order'
+PAGE_ORDER_BY = 'page_order'
 THEME = 'themes/simple'
 HOME_COVER = 'images/maxresdefault.jpg'
 
