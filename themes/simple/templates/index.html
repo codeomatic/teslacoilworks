@@ -1,37 +1,92 @@
 {% extends "base.html" %}
-{% block content %}
-<section>
 
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="swiper-zoom-container">
-          <img src="{{ SITEURL }}/images/carusel/discharge.jpg">
+{% block main_nav%}
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" id="mainNav">
+  <a class="navbar-brand" href="{{ SITEURL }}">{{ SITENAME }}</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavToggler"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNavToggler">
+    <div class="navbar-nav">
+      {% for p in pages %}
+      <a class="nav-item nav-link"
+         href="#{{p.slug}}">{{ p.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+</nav>
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid">
+  <div class="row mt-3">
+    <div class="col">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="{{ SITEURL }}/images/carusel/discharge.jpg">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="{{ SITEURL }}/images/carusel/nikola-tesla-drawing.png">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="{{ SITEURL }}/images/carusel/schematic.jpg">
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-zoom-container">
-          <img src="{{ SITEURL }}/images/carusel/nikola-tesla-drawing.png">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-zoom-container">
-          <img src="{{ SITEURL }}/images/carusel/schematic.jpg">
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination swiper-pagination-white"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
   {% for page in pages %}
-  <div id="{{ page.slug }}" class="container-fluid">
-    <h4>{{ page.title }}</h4>
-    <p>{{ page.content }}</p>
+  <div class="row">
+    <div class="col">
+      <div id="{{ page.slug }}" class="container-fluid">
+        <h4>{{ page.title }}</h4>
+        <p>{{ page.content }}</p>
+      </div>
+    </div>
   </div>
   {% endfor %}
 </section>
 {% endblock content %}
+
+{% block custom_scripts%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      autoHeight: false,
+      centeredSlides: true,
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+{% endblock %}
