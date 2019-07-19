@@ -1,11 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
-<section id="content">
-    {% for page in pages %}
-    <div id="{{ page.slug }}" class="container-fluid">
-        <h4>{{ page.title }}</h4>
-        <p>{{ page.content }}</p>
+<section>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="{{ SITEURL }}/images/carusel/discharge.jpg">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="{{ SITEURL }}/images/carusel/nikola-tesla-drawing.png">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="{{ SITEURL }}/images/carusel/schematic.jpg">
+        </div>
+      </div>
     </div>
-    {% endfor %}
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  {% for page in pages %}
+  <div id="{{ page.slug }}" class="container-fluid">
+    <h4>{{ page.title }}</h4>
+    <p>{{ page.content }}</p>
+  </div>
+  {% endfor %}
 </section>
 {% endblock content %}
