@@ -10,38 +10,87 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <title>Tesla Coil Works</title>
 </head>
 
 <body id="index" data-spy="scroll" data-target="#mainNav" data-offset="80">
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" id="mainNav">
-        <a class="navbar-brand" href="">Tesla Coil Works</a>
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" id="mainNav">
+  <a class="navbar-brand" href="#main-content">Tesla Coil Works</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavToggler"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavToggler"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <div class="collapse navbar-collapse" id="mainNavToggler">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link"
-                   href="#introduction">Introduction</a>
-                <a class="nav-item nav-link"
-                   href="#demonstrations">Demonstrations</a>
-                <a class="nav-item nav-link"
-                   href="#talks">Talks</a>
-                <a class="nav-item nav-link"
-                   href="#equipment">Equipment</a>
-                <a class="nav-item nav-link"
-                   href="#technical-requirements">Technical Requirements</a>
+  <div class="collapse navbar-collapse" id="mainNavToggler">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link"
+         href="#introduction">Introduction</a>
+      <a class="nav-item nav-link"
+         href="#demonstrations">Demonstrations</a>
+      <a class="nav-item nav-link"
+         href="#talks">Talks</a>
+      <a class="nav-item nav-link"
+         href="#equipment">Equipment</a>
+      <a class="nav-item nav-link"
+         href="#technical-requirements">Technical Requirements</a>
+    </div>
+  </div>
+
+</nav>
+
+<section class="container-fluid" id="main-content">
+  <div class="row mt-3">
+    <div class="col">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="/images/carusel/discharge.jpg">
             </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="/images/carusel/nikola-tesla-drawing.png">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="/images/carusel/schematic.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="/images/carusel/westecon-10-trim.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container" style="height: 70vh">
+              <img src="/images/carusel/science-electricity-nikola-tesla-teslacoil.jpg">
+            </div>
+          </div>
+
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
-    </nav>
-
-<section id="content">
-    <div id="introduction" class="container-fluid">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div id="introduction" class="container-fluid">
         <h4>Introduction</h4>
         <p><p>A wee bit of introduction for me. I am a Physicist and Electrical Engineer, and originally worked at Tektronix 
 before moving into Electrical Engineering and specializing in Power Distribution Systems, power supply design for 
@@ -53,8 +102,12 @@ Tesla has a near god status, so I built a Tesla Coil small enough to be easily m
 life and inventions of Nikola Tesla, and started giving talks at Steampunk and Science Fiction Conventions on Tesla 
 with Tesla Coil demo sessions at the end.  All of my equipment is built with the Steampunk design aesthetic in mind 
 and is designed to be displayed, and has been entered in several Steampunk Art shows. </p></p>
+      </div>
     </div>
-    <div id="demonstrations" class="container-fluid">
+  </div>
+  <div class="row">
+    <div class="col">
+      <div id="demonstrations" class="container-fluid">
         <h4>Demonstrations</h4>
         <p><p>In my demonstrations I want to vividly show the beauty in the spectacular arcs, sparks and corona glow created by
 Tesla Coils and other High Voltage apparatus. As part of the demos I add explanations of the science involved in
@@ -87,8 +140,12 @@ Maker Fair for 5 years, and for three years there we ran my BIG Tesla Coil which
 The Portland Fire Marshal inspected and approved my setups there every year. In February of 2018 I gave eight 
 demos at the Portland Winter Light Festival. My setup was in the Oregon Rail Heritage Center, and we had between 
 300 and 500 people at every demo. I estimate that over 5000 people have seen my demos with no problems.</p></p>
+      </div>
     </div>
-    <div id="talks" class="container-fluid">
+  </div>
+  <div class="row">
+    <div class="col">
+      <div id="talks" class="container-fluid">
         <h4>Talks</h4>
         <p><p>I have developed a number of different lectures that I give on Science, on Tesla Coils, and on High Voltage equipment 
 and effects. These are PowerPoint presentations and last from 30 to 50 minutes and can have Tesla Coil and high 
@@ -106,8 +163,12 @@ voltage demonstrations incorporated into them.</p>
 <div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="n">Discovery</span> <span class="k">of</span> <span class="n">Cathode</span> <span class="n">Rays</span> <span class="err">–</span> <span class="n">How</span> <span class="n">electrons</span> <span class="n">were</span> <span class="n">discovered</span><span class="p">,</span> <span class="k">with</span> <span class="n">demos</span><span class="p">.</span> 
 <span class="mi">2</span><span class="p">.</span> <span class="n">Lightning</span><span class="p">:</span> <span class="n">Ball</span> <span class="n">Lightning</span><span class="p">,</span> <span class="n">Red</span> <span class="n">Sprites</span><span class="p">,</span> <span class="k">and</span> <span class="n">Giant</span> <span class="n">Blue</span> <span class="n">Spires</span>
 </pre></div></p>
+      </div>
     </div>
-    <div id="equipment" class="container-fluid">
+  </div>
+  <div class="row">
+    <div class="col">
+      <div id="equipment" class="container-fluid">
         <h4>Equipment</h4>
         <p><p>Available for Demonstrations</p>
 <div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="mi">500</span> <span class="n">KV</span> <span class="n">spark</span> <span class="n">gap</span> <span class="n">Tesla</span> <span class="n">Coil</span><span class="p">,</span> <span class="mi">3</span> <span class="n">foot</span> <span class="n">arc</span>
@@ -135,8 +196,12 @@ voltage demonstrations incorporated into them.</p>
 <span class="mi">3</span>. <span class="nv">Cross</span> <span class="nv">tubes</span> <span class="k">for</span> <span class="nv">gas</span> <span class="nv">discharge</span> <span class="nv">experiments</span>.
 <span class="mi">4</span>. <span class="nv">Crookes</span> <span class="nv">tubes</span> <span class="k">for</span> <span class="nv">electron</span> <span class="nv">beam</span> <span class="nv">demonstrations</span>.
 </pre></div></p>
+      </div>
     </div>
-    <div id="technical-requirements" class="container-fluid">
+  </div>
+  <div class="row">
+    <div class="col">
+      <div id="technical-requirements" class="container-fluid">
         <h4>Technical Requirements</h4>
         <p><p>To demonstrate both of the medium Tesla Coils (3 foot arcs, 500 KV and 2 foot arcs, 300 KV)  I need a large 
 (roughly 20 feet wide by 14 feet deep, with a 12 foot minimum ceiling height) <strong>DARK</strong> area so the faint luminous phenomena 
@@ -163,14 +228,12 @@ this to the audience before the demo. This has not been a problem in any of my d
 of my equipment is disassembled for storage, and for transport, so it must be reassembled for operation. For a full 
 setup I bring about two SUV loads of equipment. Teardown is about half of the setup time. I like to have an assistant 
 to help in the setup and teardown, and to help with demos so they run faster</p></p>
+      </div>
     </div>
+  </div>
 </section>
 
-    <footer id="contentinfo" class="body">
-            <address id="about" class="vcard body">
-            Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-            which takes great advantage of <a href="http://python.org">Python</a>.
-            </address><!-- /#about -->
+    <footer>
     </footer><!-- /#contentinfo -->
 
     <!-- Optional JavaScript -->
@@ -187,5 +250,35 @@ to help in the setup and teardown, and to help with demos so they run faster</p>
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous">
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      autoHeight: false,
+      centeredSlides: true,
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 700,
+      easing: 'easeInOutCubic',
+      offset: 75
+    });
+</script>
+
 </body>
 </html>
