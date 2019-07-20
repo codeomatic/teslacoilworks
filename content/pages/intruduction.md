@@ -1,5 +1,6 @@
 Title: Introduction
 page_order: 0
+side_image: intro-from-gearcon-m.jpg
 
 
 A wee bit of introduction for me. I am a Physicist and Electrical Engineer, and originally worked at Tektronix 
