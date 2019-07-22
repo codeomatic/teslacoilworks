@@ -92,9 +92,6 @@
   <div class="row mt-5">
     <div class="col">
       <div class="img-holder" data-image="{{ SITEURL }}/images/{{ page.background_image }}"></div>
-<!--      <div data-jarallax data-speed="0.2" class="jarallax">
-      <img class="jarallax-img" src="{{ SITEURL }}/images/{{ page.background_image }}" alt="">
-      </div>-->
     </div>
   </div>
   {% endif %}
@@ -125,8 +122,8 @@
 {% block custom_scripts%}
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
-<script src="https://rawgit.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js"></script>
-<!--<script src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>-->
+<!--https://github.com/pederan/Parallax-ImageScroll-->
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.imageScroll.min.js"></script>
 
 <script>
     var scroll = new SmoothScroll('a[href*="#"]', {
@@ -135,7 +132,9 @@
       offset: 75
     });
     $('.img-holder').imageScroll({
-      coverRatio: 0.8
+      coverRatio: 0.8,
+      mediaWidth: 1200,
+      mediaHeight: 600
     });
 </script>
 {% endblock %}
