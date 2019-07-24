@@ -18,8 +18,9 @@
   <div class="collapse navbar-collapse" id="mainNavToggler">
     <div class="navbar-nav">
       {% for p in pages %}
-      <a class="nav-item nav-link"
-         href="#{{p.slug}}">{{ p.title }}</a>
+      <a class="nav-item nav-link" href="#{{p.slug}}">
+        {{ p.title }}
+      </a>
       {% endfor %}
     </div>
   </div>
@@ -86,7 +87,9 @@
 
   <div class="row mt-5">
     <div class="col">
-      <h2 class="text-center">{{ page.title }}</h2>
+      <h2 class="text-center">
+        {% if page.sub_title %}{{ page.sub_title }}{% else %}{{page.title}}{% endif %}
+      </h2>
     </div>
   </div>
 
