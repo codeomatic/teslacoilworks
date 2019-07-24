@@ -33,11 +33,11 @@ Bootstrap 4 breakpoints
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  p {font-size: 1.8rem;} /*1rem = 16px*/
+  p {font-size: 1.5rem;} /*1rem = 16px*/
   .navbar {font-size: 1.2rem;}
   a.navbar-brand {font-size: 1.8rem;}
-  li {font-size: 1.8rem;}
-  h2 {font-size: 2.0rem;}
+  li {font-size: 1.5rem;}
+  h2 {font-size: 1.7rem;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
