@@ -3,7 +3,7 @@
 {% block head %}
 <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet" >
 <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
-<link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" rel="stylesheet">
+<!--<link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-sizes.css" rel="stylesheet">-->
 {% endblock head %}
 
 {% block main_nav%}
@@ -32,8 +32,6 @@
 <section class="container-fluid" id="main">
   <div class="row mt-3">
     <div class="col">
-      <div class="bd-example">
-
         <div id="mainCarouselCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#mainCarouselCaptions" data-slide-to="0" class="active"></li>
@@ -43,24 +41,12 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{ SITEURL }}/images/carusel/spark-gap-r3to1-h400.jpg" class="d-block w-100" alt="spark gap">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
             </div>
             <div class="carousel-item">
               <img src="{{ SITEURL }}/images/carusel/vacuum-tube-circles-r3to1-h400.jpg" class="d-block w-100" alt="vacuum tube circles">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
             </div>
             <div class="carousel-item">
               <img src="{{ SITEURL }}/images/carusel/vacuum-tube-r3to1-h400.jpg" class="d-block w-100" alt="vacuum tube">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#mainCarouselCaptions" role="button" data-slide="prev">
@@ -72,7 +58,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>
     </div>
   </div>
   {% for page in pages %}
