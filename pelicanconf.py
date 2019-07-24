@@ -33,7 +33,7 @@ DEFAULT_PAGINATION = 10
 DISPLAY_PAGES_ON_MENU = True
 
 PAGE_ORDER_BY = 'page_order'
-THEME = 'themes/simple'
+THEME = 'themes/single-page'
 HOME_COVER = 'images/maxresdefault.jpg'
 
 # Uncomment following line if you want document-relative URLs when developing
