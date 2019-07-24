@@ -3,7 +3,6 @@
 {% block head %}
 <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet" >
 <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
-<!--<link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-sizes.css" rel="stylesheet">-->
 {% endblock head %}
 
 {% block main_nav%}
@@ -104,17 +103,6 @@
 
 <!--https://github.com/pederan/Parallax-ImageScroll-->
 <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.imageScroll.min.js"></script>
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/index.js"></script>
 
-<script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 700,
-      easing: 'easeInOutCubic',
-      offset: 170
-    });
-    $('.img-holder').imageScroll({
-      coverRatio: 0.8,
-      mediaWidth: 1200,
-      mediaHeight: 600
-    });
-</script>
 {% endblock %}
