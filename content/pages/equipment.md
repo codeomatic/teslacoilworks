@@ -1,5 +1,7 @@
 Title: Equipment
 page_order: 3
+background_image: equipment-2to1-h600.jpg
+
 
 Available for Demonstrations
 

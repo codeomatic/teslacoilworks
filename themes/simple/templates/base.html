@@ -17,7 +17,7 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 </head>
 
-<body id="index" data-spy="scroll" data-target="#mainNav" data-offset="80">
+<body id="index" data-spy="scroll" data-target="#mainNav" data-offset="185">
 
     {% block main_nav%}
     {% endblock %}
@@ -26,6 +26,8 @@
     {% endblock %}
 
     <footer>
+        {% block footer %}
+        {% endblock %}
     </footer><!-- /#contentinfo -->
 
     <!-- Optional JavaScript -->

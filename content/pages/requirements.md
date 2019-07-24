@@ -1,5 +1,6 @@
 Title: Technical Requirements
 page_order: 4
+background_image: requirements-2to1-h600.jpg
 
 
 To demonstrate both of the medium Tesla Coils (3 foot arcs, 500 KV and 2 foot arcs, 300 KV)  I need a large 

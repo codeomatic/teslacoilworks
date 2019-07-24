@@ -1,6 +1,6 @@
 Title: Demonstrations
 page_order: 1
-background_image: talks-2to1-h600.jpg
+background_image: demonstrations-2to1-h600.jpg
 
 In my demonstrations I want to vividly show the beauty in the spectacular arcs, sparks and corona glow created by
 Tesla Coils and other High Voltage apparatus. As part of the demos I add explanations of the science involved in

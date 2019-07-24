@@ -1,5 +1,7 @@
 Title: Talks
 page_order: 2
+background_image: talks-2to1-h600.jpg
+
 
 I have developed a number of different lectures that I give on Science, on Tesla Coils, and on High Voltage equipment 
 and effects. These are PowerPoint presentations and last from 30 to 50 minutes and can have Tesla Coil and high 
