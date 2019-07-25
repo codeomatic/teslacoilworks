@@ -29,7 +29,7 @@ I need to inspect the venue beforehand to be sure that my equipment will work we
 The medium Tesla coil runs best on a 20-amp branch circuit at 120 VAC, and the other equipment will run on a 15-amp, 
 120 VAC circuit.
 
-**Setup time is 2 to 4 hours** depending upon how much equipment I bring, and on how much help I have to assemble it. Much 
+**Setup time is 2 to 5 hours** depending upon how much equipment I bring, and on how much help I have to assemble it. Much 
 of my equipment is disassembled for storage, and for transport, so it must be reassembled for operation. For a full 
 setup I bring about two SUV loads of equipment. Teardown is about half of the setup time. I like to have an assistant 
 to help in the setup and teardown, and to help with demos so they run faster

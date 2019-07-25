@@ -2,8 +2,8 @@ Title: Introduction
 page_order: 0
 
 
-The **Tesla Coil** generates hundreds of thousands of volts of high frequency electricity. This can
-create several foot-long glowing arcs, sparks and corona glows of exceptional beauty. While
+The **Tesla Coil** generates 500,000 volts of high frequency electricity. This can
+create 3 feet long glowing arcs, sparks and corona glows of exceptional beauty. While
 very intense, and more than a little intimidating at close range, the beautiful light created by
 these arcs will mesmerize you, as they have me. The beauty in the arcs is why I have been
 building and improving Tesla Coils ever since high school. They also demonstrate important
