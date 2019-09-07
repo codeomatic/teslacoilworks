@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Don Anderson'
 SITENAME = 'Tesla Coil Works'
-SITEURL = ''
+SITEURL = 'https://www.teslacoilworks.com'
+DESCRIPTION = 'The most powerful Tesla coils in the Pacific Northwest!'
 
 PATH = 'content'
 
