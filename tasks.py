@@ -81,9 +81,8 @@ def publish(c):
     c.run('pelican -s publishconf.py')
     c.run(
         'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        '{} {production}:{dest_path}'.format(
-            CONFIG['deploy_path'].rstrip('/') + '/',
-            **CONFIG))
+        '{}'.format(CONFIG['deploy_path'] + '/')
+    )
 
 
 @task
