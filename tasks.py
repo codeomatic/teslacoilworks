@@ -4,6 +4,7 @@ import os
 import shutil
 import sys
 import datetime
+import segno
 
 from invoke import task
 from invoke.util import cd
@@ -92,3 +93,15 @@ def gh_pages(c):
     c.run('ghp-import -b {github_pages_branch} '
           '-m {commit_message} '
           '{deploy_path} -p'.format(**CONFIG))
+
+
+@task
+def qr_code(c):
+    """Generate QR Code"""
+    qrcode = segno.make("https://www.teslacoilworks.com/")
+    qrcode.to_artistic(
+        background="content/images/tesla-coil-works-300x300.jpg",
+        target="content/images/qrcode.jpg",
+        scale=10,
+        dark="darkblue",
+    )
